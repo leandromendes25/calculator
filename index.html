@@ -37,7 +37,8 @@
        <div class="container-bill"> 
        <div class="bill">
        <label>Bill</label>
-       <img src="./images/icon-dollar.svg" class="dollar" alt="dollar icon"> 
+       <img src="./images/icon-dollar.svg" class="dollar" alt="dollar icon">
+       <span id="bill-inp" class="warning invisible">Can't be zero</span> 
         <input type="number" id="bill-amount" class="inp inp1" placeholder="0">
       </div>
                     Select Tip %
@@ -47,18 +48,19 @@
           <button class="percentage" percentage="0.15">15%</button>
           <button class="percentage" percentage="0.25">25%</button>
           <button class="percentage" percentage="0.50">50%</button>
-        <input type="number" id="inp-csm" class="percentage inp" placeholder="Custom">
+        <input  type="number" id="inp-csm" class="percentage inp" placeholder="Custom">
       </div> 
 
       <div class="num-people">
           <label>Number of People
               <img src="./images/icon-person.svg" class="person" alt="person icon" >
+              <span id="people-inp" class="warning invisible">Can't be zero</span>
         <input type="number" id="num-p" class="inp inp2" placeholder="0">
       </label>
       </div>
 
       </div> 
-      <div class="container-bill container-amount">
+      <div class="container-amount">
           <div>
           <div class="result"> 
               <p>
@@ -74,7 +76,7 @@
               </p>
              <span class="value" id="total-amount">0.0</span></div>
              </div>
-            <button type="reset" class="btn">RESET</button>
+            <button id="reset" type="reset" class="btn">RESET</button>
           </div>
       </div>
         <!-- <div class="attribution">
